@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a routerLink="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="cars" class="nav-link" routerLinkActive="active">Cars</a>
+            </li>
+            <li class="nav-item">
+                <a routerLink="new" class="nav-link" routerLinkActive="active">Nouveau Car</a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        Connexion : {{time}} s
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

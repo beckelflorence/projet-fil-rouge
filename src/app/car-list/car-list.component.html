@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <app-car *ngFor="let car of cars"
+  [carName]="car.title"
+  [carOnAir]="car.onAir"
+  [carAffiche]="car.affiche"
+  [synopsis]="car.synopsis"
+  [date]="car.date"
+  [id]="car._id">
+</app-car>
+</ul>
+

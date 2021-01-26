@@ -1,0 +1,15 @@
+.affiche {
+    width: 100%;
+}
+
+.onAir img {
+    width: 50px;
+}
+
+.carBr {
+    background-color: #17a2b8;
+}
+
+.carSalle {
+    background-color: #ffc107;
+}

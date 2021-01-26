@@ -1,0 +1,46 @@
+<div class="row" *ngIf="car">
+    <div class="col-6">
+        <div class="form-group">
+            <label>Titre</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="car.title">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label>Affiche</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="car.affiche">
+        </div>
+    </div>
+</div>
+<div class="row" *ngIf="car">
+    <div class="col-6">
+        <div class="form-group">
+            <label>Support</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="car.onAir">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label>Date</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="car.date">
+        </div>
+    </div>
+</div>
+
+<div class="row" *ngIf="car">
+    <div class="col-12">
+        <div class="form-group">
+            <label for=""></label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" [(ngModel)]="car.synopsis"></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="text-center" *ngIf="car"><button class="btn btn-outline-success" (click)="onModif()">Envoyer</button>
+
+</div>

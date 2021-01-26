@@ -1,0 +1,28 @@
+<li [ngClass]="{  'list-group-item': true,
+                  'list-group-item-info': carOnAir == 'Supercar',
+                  'list-group-item-danger': carOnAir == 'Citadine'}">
+    <div class="row">
+        <div class="col-2">
+            <img [src]="carAffiche" class="affiche">
+        </div>
+        <div class="col-8">
+            <div class="onAir" *ngIf="carOnAir == 'Supercar'">
+                <img src="https://www.supercarsshop.com.au/wp-content/uploads/2019/05/supercars-logo-landscape.png">
+            </div>
+            <div class="onAir" *ngIf="carOnAir == 'Citadine'">
+                <img src="https://www.dpcdesign.com/img/logolist/citadines.jpg">
+            </div>
+            <h3 [ngStyle]="{color: changeColor()}">Car : {{ carName }} - {{date}}</h3>
+
+
+        </div>
+        <div class="col-2">
+            <a [routerLink]="['/modif' , id]" class="btn btn-outline-warning">M</a> &nbsp;
+            <button class="btn btn-outline-danger" (click)="removeCar(id)">X</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">{{synopsis}}</div>
+    </div>
+</li>

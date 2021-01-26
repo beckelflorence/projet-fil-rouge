@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <label>Titre</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="newCar.title">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label>Affiche</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="newCar.affiche">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="form-group">
+            <label>Support</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="newCar.onAir">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label>Date</label>
+            <br>
+            <input type="text" class="form-control" [(ngModel)]="newCar.date">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="form-group">
+            <label for=""></label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" class="form-control" [(ngModel)]="newCar.synopsis"></textarea>
+        </div>
+    </div>
+</div>
+
+<div class="text-center"><button class="btn btn-outline-success" (click)="onSaveCar()">Envoyer</button>
+
+</div>
